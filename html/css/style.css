@@ -26,3 +26,30 @@ li {
 a {
   text-decoration: none;
 }
+
+/*
+lets add some css to make our site have a better look and layout
+*/
+
+/*set width to 960px, margin 0 auto will center the whole site*/
+body {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.col {
+  width: 30%;
+  float: left;
+  margin: 1.5%;
+}
+
+footer {
+  clear: both;
+}
+/*lets set a media query to make our columns adjust when to full width when the screen width is less than 720*/
+@media only screen and (max-width: 720px){
+  .col {
+    width: 97%;
+    float: left;
+  }
+}
