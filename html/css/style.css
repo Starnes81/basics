@@ -1,0 +1,28 @@
+
+
+/*lets set some gloabl styling*/
+/*set up some default fonts, text color, and center placeholder text*/
+* {
+  font-family: sans-serif, Arial, Verdana;
+  color: #828282;
+  text-align: center;
+}
+/*setting up general background color, basic margin and padding*/
+header, .content, footer {
+  background-color:  #efefef;
+  margin-top: 20px;
+  padding: 10px 0px 5px 0px;
+}
+/*set height for content*/
+.content {
+  height: 100px;
+}
+/* make li inline, basically make the menu in a single row*/
+li {
+  display: inline;
+  padding: 5px;
+}
+/* get rid of horrible hyperlink underline*/
+a {
+  text-decoration: none;
+}
