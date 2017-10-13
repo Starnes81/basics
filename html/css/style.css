@@ -8,7 +8,7 @@
   text-align: center;
 }
 /*setting up general background color, basic margin and padding*/
-header, .content, footer {
+header, .feature, .footerContainer {
   background-color:  #efefef;
   margin-top: 20px;
   padding: 10px 0px 5px 0px;
@@ -36,11 +36,19 @@ body {
   max-width: 960px;
   margin: 0 auto;
 }
-
+.colContainer {
+  margin-top: 20px;
+  padding: 10px 0px 5px 0px;
+}
 .col {
-  width: 30%;
+  width: 32%;
   float: left;
-  margin: 1.5%;
+  margin-right: 2%;
+  margin-bottom: 20px;
+  background-color:  #efefef;
+}
+.col:last-child {
+  margin-right: 0px;
 }
 
 footer {
@@ -49,7 +57,9 @@ footer {
 /*lets set a media query to make our columns adjust when to full width when the screen width is less than 720*/
 @media only screen and (max-width: 720px){
   .col {
-    width: 97%;
+    width: 100%;
     float: left;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
